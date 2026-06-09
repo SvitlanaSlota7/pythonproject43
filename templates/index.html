@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="hero-section">
+    <h1 class="neon-text-pink">Курс "Торти вашої мрії"</h1>
+    <p class="subtitle">Навчися створювати кондитерські шедеври, що сяють яскравіше за зірки!</p>
+    
+    <div class="course-details">
+        <div class="card">
+            <h3>Програма</h3>
+            <p>Мусові торти, ідеальний велюр та космічний декор.</p>
+        </div>
+        <div class="card">
+            <h3>Для кого?</h3>
+            <p>Для новачків та кондитерів, які шукають свій унікальний стиль.</p>
+        </div>
+    </div>
+    
+    <a href="{{ url_for('register') }}" class="btn-giant-neon">Зарезервувати місце</a>
+</div>
+{% endblock %}

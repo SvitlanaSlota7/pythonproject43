@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Торти вашої мрії</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">🍰 SuperCakes</div>
+        <div class="nav-links">
+            <a href="{{ url_for('index') }}">Головна</a>
+            <a href="{{ url_for('register') }}" class="btn-neon">Записатись на курс</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+</body>
+</html>
